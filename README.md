@@ -10,6 +10,8 @@ We can match PPO and A2C's performance exactly by doing the following tweaks in 
 1. Disable value function clipping.
 1. Use A2C's RMSprop optimizer and configurations
 
+![](code.png)
+
 To see it in action, run
 
 ```python
