@@ -20,6 +20,9 @@ poetry run python sb3_atari_a2c.py
 
 we get the following screenshot, which shows the sum of the updated models' first layer's weights and they are exactly the same
 
-![](img.png)
+![](demo.png)
 
 Therefore, A2C is a special case of PPO when PPO 1) uses learning rate $=0.0007$ and turn off learning rate annealing,  2) set entropy coefficient $=0$, 3) set number of steps $=5$, 4) turn off advantage normalization, 5) disable GAE, 6) set update epoch $K=1$, 7) use whole batch of data for update, 8) disable value function clipping, and 9) use the RMSprop optimizer.
+
+
+Paper incoming...
