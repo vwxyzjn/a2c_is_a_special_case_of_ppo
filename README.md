@@ -14,8 +14,8 @@ To see it in action, run
 
 ```python
 poetry install
-poetry run python sb3_atari_ppo.py
-poetry run python sb3_atari_a2c.py
+poetry run python sb3_ppo.py
+poetry run python sb3_a2c.py
 ```
 
 we get the following screenshot, which shows the sum of the updated models' first layer's weights and they are exactly the same
