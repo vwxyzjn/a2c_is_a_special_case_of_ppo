@@ -1,6 +1,6 @@
 # A2C is a special case of PPO
 
-We were able to match PPO and A2C's performance exactly by doing the following tweaks in PPO:
+We can match PPO and A2C's performance exactly by doing the following tweaks in PPO:
 
 1. Match the learning rate parameter to be exactly $0.0007$ (also means turning off learning rate annealing), the entropy coefficient to $0$, and the number of steps to be $5$.
 1. Turn off advantage normalization (enabled by our SB3 fork)
@@ -10,11 +10,12 @@ We were able to match PPO and A2C's performance exactly by doing the following t
 1. Disable value function clipping.
 1. Use A2C's RMSprop optimizer and configurations
 
-Then by running 
+To see it in action, run
 
 ```python
-python sb3_atari_ppo.py
-python sb3_atari_a2c.py
+poetry install
+poetry run python sb3_atari_ppo.py
+poetry run python sb3_atari_a2c.py
 ```
 
 we get the following screenshot, which shows the sum of the updated models' first layer's weights and they are exactly the same
