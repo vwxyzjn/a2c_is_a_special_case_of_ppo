@@ -3,7 +3,7 @@
 We can match PPO and A2C's performance exactly by doing the following tweaks in PPO:
 
 1. Match the learning rate parameter to be exactly $0.0007$ (also means turning off learning rate annealing), the entropy coefficient to $0$, and the number of steps to be $5$.
-1. Turn off advantage normalization (enabled by our SB3 fork)
+1. Turn off advantage normalization (enabled by [our SB3 fork](https://github.com/DLR-RM/stable-baselines3/pull/763))
 1. Disable GAE by its `lambda` parameter to 1.
 1. Set the number of update epochs $K$ to 1, so the clipped objective has nothing to clip.
 1. Perform update on the whole batch of training data
