@@ -2,11 +2,8 @@
 from stable_baselines3 import A2C
 
 model = A2C(
-    "MlpPolicy",
-    "CartPole-v0",
-    verbose=0,
-    device="cpu",
-    seed=1,
+    "MlpPolicy", "CartPole-v0", verbose=0,
+    device="cpu", seed=1,
 )
 model.learn(total_timesteps=3000)
 for name, param in model.policy.named_parameters():

@@ -6,7 +6,7 @@ authors = ["Costa Huang <costa.huang@outlook.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-stable-baselines3 = {git = "https://github.com/vwxyzjn/stable-baselines3.git", rev = "ppo-configure-normalize_advantage"}
+stable-baselines3 = "^1.5.0"
 
 [tool.poetry.dev-dependencies]
 
